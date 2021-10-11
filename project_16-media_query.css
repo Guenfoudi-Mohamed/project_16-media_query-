@@ -251,6 +251,7 @@ body main .section_4 .forms .form .img{width: 190px;height: 190px;}
 body main .section_4 .forms .form .img img{width: 100%;height: 100%;}
 body main .section_4 .forms .form .content{max-width: 260px; padding: 0px 17px;}
 body main .section_4 .forms .form .content span{font-size: 13px;color: var(--color);}
+        /* start media query */
 @media(min-width:280px) and (max-width:1395px){
         body main .section_4 .forms{flex-direction:column;align-items: center;}
         body main .section_4 .forms .form:last-child{margin-top: 15px;}
@@ -265,3 +266,27 @@ body main .section_4 .forms .form .content span{font-size: 13px;color: var(--col
         body main .section_4 .forms .form .content h4{font-size: 13px;margin: 5px auto;}
         body main .section_4 .forms .form .content span{font-size: 11px;}
 }
+        /* start section_5 */
+body main .section_5{width: 100%;}
+body main .section_5 h2{text-align: center;}
+body main .section_5 span{text-align: center;color: var(--color_hover);display: block;}
+body main .section_5 .album_imgs{width: inherit;margin-top: 35px;display: flex;}
+body main .section_5 .album_imgs img{width: calc(1440px / 6);height: 240px;}
+@media(min-width:280px) and (max-width:1255px){
+        body main .section_5{width: 83%;margin:0px auto;}
+        body main .section_5 .album_imgs{justify-content: center;flex-wrap: wrap;margin: 35px auto 0px auto;}
+        body main .section_5 .album_imgs img{width:210px;margin: 5px;}
+}
+@media(min-width:280px) and (max-width:870px){
+        body main .section_5{width: 83%;}
+}
+@media(min-width:280px) and (max-width:638px){
+        body main .section_5{width: 95%;}
+}
+@media(min-width:280px) and (max-width:500px){
+        body main .section_5{width: 88%;}
+        body main .section_5 .album_imgs{flex-direction: column;align-items: center;}
+}
+
+/* start footer */
+body footer{min-height: 500px;width: 100%;border: 1px solid red;}
