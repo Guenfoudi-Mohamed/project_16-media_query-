@@ -25,10 +25,7 @@ body > input[id="check_slid_5"]:checked ~ .slider .check_btns .cl5{background-co
 
 body .no_find{width: 100%;height: 100vh;display: none;justify-content: center;align-items: center;background-color: #000;}
 body .no_find h4{color: #fff;text-align: center;width: 80%;margin:auto;}
-@media(min-width:0px) and (max-width:279px){
-        body{overflow: hidden;}
-        body .no_find{display: flex;position: fixed;top: 0px ;}
-}
+
 
 /*=== start header ===*/
 body header{width: 100%;position:sticky;top:0px;background-color:#fff;display: flex;align-items: center;justify-content: flex-end; min-height: 60px;box-shadow: 0px 0px 1px .1px #c2c2c2;z-index: 4;overflow: hidden;}
@@ -65,9 +62,7 @@ body header .check_humbrger .bar{width: 100%;height: 3px;border-radius: 5px;back
         body header .container .content_right .icons{border: none;margin: 5px auto;}
         body header .check_humbrger{display: flex;top: 22.5px;right: 7.5%;}
 }
-@media(min-width:0px) and (max-width:279px){
-        body header{display: none;}
-}
+/*=== end header ===*/
 /*=== start slider ===*/
 body .slider{background-color: rgb(245, 246, 240);width: 100%;position: relative;overflow: hidden;}
 body .slider .container{width:500%;position: relative;left:calc(-100% * 0);display: flex;animation:move 10s 2s 1; animation-fill-mode:forwards;animation-timing-function:ease;transition:left 1s;}
@@ -110,9 +105,6 @@ body .slider > .s_r{right: 55px;}
         body .slider .check_btns{left:50%;transform: translateX(-50%) scale(.7)}
         body .slider > .s_l{left: 25px;}
         body .slider > .s_r{right: 25px;}
-}
-@media(min-width:0px) and (max-width:279px){
-        body .slider{display: none;}
 }
 
 /*=== start Animation slider ===*/
@@ -159,12 +151,8 @@ body .slider > .s_r{right: 55px;}
         }
         
 } */
-
+/*=== end slider ===*/
 /*=== start main ===*/
-body main{width:100%;background-color: rgb(254,254,254);} 
-@media(min-width:0px) and (max-width:279px){
-        body main {display: none;}
-}
         /* start section_1 */
 body main .section_1{max-width: 65%;position: relative;left: 20%; display: flex;justify-content: space-between;align-items: center;padding: 35px 0px;flex-wrap: wrap;}
 body main .section_1::before{content: '';width: 100%;height: 10px;background-image:radial-gradient( rgb(225, 225, 225), rgb(255, 255, 255), rgb(255, 255, 255));position: absolute;bottom: 0px;display: block;}
@@ -281,8 +269,6 @@ body main .section_5 .album_imgs .img .content_social a:hover{color: var(--color
 body main .section_5 .album_imgs .img:nth-child(2) .content_social{display: flex;}
 body main .section_5 .album_imgs .img:nth-child(2) .content_social a{color: var(--color_hover);-webkit-text-stroke: .3px #000;}
 body main .section_5 .album_imgs .img:hover .content_social{display: flex;}
-
-/* body main .section_5 .album_imgs img::after{content: '<i>';} */
 @media(min-width:280px) and (max-width:1255px){
         body main .section_5{width: 83%;margin:0px auto;}
         body main .section_5 .album_imgs{justify-content: center;flex-wrap: wrap;margin: 35px auto 0px auto;}
@@ -298,8 +284,8 @@ body main .section_5 .album_imgs .img:hover .content_social{display: flex;}
         body main .section_5{width: 88%;}
         body main .section_5 .album_imgs{flex-direction: column;align-items: center;}
 }
-
-/* start footer */
+/*=== end main ===*/
+/*=== start footer ===*/
 body footer{width: 100%;padding: 35px 0px;}
         /* start footer_top */
 body footer .footer_top{padding-top: 7px;}        
@@ -315,10 +301,10 @@ body footer .line{width: 65%;height: 10px;background-image: radial-gradient( rgb
 body footer .footer_bottom .form a{display: block;color: var(--color);font-size: 12px;margin: 7px 0px;}
 body footer .footer_bottom .form:first-child span{display: block;}
 body footer .footer_bottom .form:first-child a{display: inline-block;margin-top: 15px;font-size: 18px;-webkit-text-stroke: .3px #000;}
-body footer .footer_bottom .form:nth-child(4) span{display: block;}
-body footer .footer_bottom .form:nth-child(4) a{width: 39px;height: 39px; display: inline-block;color: #000;background-color: var(--background-color);padding: 10px;border-radius: 50%;font-size: 16px;position: relative;}
-body footer .footer_bottom .form:nth-child(4) a i{position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%);}
-body footer .footer_bottom .form:nth-child(4) a:hover{background-color: var(--color_hover);color: #fff;}
+body footer .footer_bottom .form:nth-child(4) .icons span{display: block;}
+body footer .footer_bottom .form:nth-child(4) .icons a{width: 39px;height: 39px; display: inline-block;color: #000;background-color: var(--background-color);padding: 10px;border-radius: 50%;font-size: 16px;position: relative;}
+body footer .footer_bottom .form:nth-child(4) .icons a i{position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%);}
+body footer .footer_bottom .form:nth-child(4) .icons a:hover{background-color: var(--color_hover);color: #fff;}
 @media(min-width:280px) and (max-width:1020px){
         body footer .footer_top{flex-direction:column;}
         body footer .footer_top .content_left h3{text-align: center;}
@@ -330,4 +316,23 @@ body footer .footer_bottom .form:nth-child(4) a:hover{background-color: var(--co
         body footer .footer_top,.footer_bottom{position:initial;margin:0px auto ;width: 85%; }
         body footer .footer_bottom{width: 85%; justify-content: center;}
         body footer .footer_bottom .form{margin: 15px;}
+}
+@media(min-width:280px) and (max-width:500px){
+        body footer .footer_top .content_left h3{font-size: 15px;}
+        body footer .footer_top .content_left span{margin: 5px 0px;}
+        body footer .footer_top .inputs input{padding:4px;border: none;font-size: 13px;}
+        body footer .footer_top .inputs input[type="button"]{padding:4px;}
+        body footer .footer_bottom{flex-direction: column;align-items: center;}
+        body footer .footer_bottom .form{margin: 10px;}
+        body footer .footer_bottom .form:first-child h2,span{text-align: center;}
+        body footer .footer_bottom .form a{text-align: center;}
+        body footer .footer_bottom .form:last-child .icons{margin-top:10px; display: flex;justify-content: center;align-items: center;}
+        body footer .footer_bottom .form:last-child .icons a:nth-child(2){margin: 0px 7px;}
+}
+/*=== end footer ===*/
+
+/*=== start no_find ===*/
+@media(min-width:49px) and (max-width:279px){
+        body header,.slider,main,footer{display: none;}
+        body .no_find{display: flex;position: fixed;top: 0px ;z-index: 10;}
 }
